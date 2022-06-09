@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_buying_tower"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".ShopActivity">
+
+    <Button
+        android:id="@+id/inventory"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="480dp"
+        android:layout_marginTop="0dp"
+        android:backgroundTint="@color/tron5"
+        android:onClick="inventory"
+        android:text="@string/inventory"
+        android:textColor="@color/sunset3"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/shop"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="280dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/shop"
+        android:textAlignment="center"
+        android:textColor="@color/sunset3"
+        android:textSize="24sp"
+        tools:text="@string/shop" />
+
+    <ImageView
+        android:id="@+id/bug_tower"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="70dp"
+        android:scaleType="fitStart"
+        app:srcCompat="@drawable/bug" />
+
+    <TextView
+        android:id="@+id/cost_bug"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="70dp"
+        app:layout_constraintEnd_toStartOf="@+id/coin1"
+        android:text="0"
+        android:textColor="@color/sunset3"
+        android:textSize="34sp" />
+
+    <ImageView
+        android:id="@+id/coin1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="75dp"
+        app:srcCompat="@drawable/panopticoin" />
+
+    <Button
+        android:id="@+id/buy_bug"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="120dp"
+        android:backgroundTint="@color/tron5"
+        android:onClick="buyBug"
+        android:text="@string/buy_bug"
+        android:textColor="@color/sunset3"
+        android:textSize="15sp" />
+
+
+
+    <ImageView
+        android:id="@+id/root_kit_tower"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="230dp"
+        android:layout_marginTop="70dp"
+        android:scaleType="fitStart"
+        app:srcCompat="@drawable/rootkit" />
+
+    <TextView
+        android:id="@+id/cost_root_kit"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="70dp"
+        app:layout_constraintEnd_toStartOf="@+id/coin2"
+        android:text="0"
+        android:textColor="@color/sunset3"
+        android:textSize="34sp" />
+
+    <ImageView
+        android:id="@+id/coin2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="330dp"
+        android:layout_marginTop="75dp"
+        app:srcCompat="@drawable/panopticoin" />
+
+    <Button
+        android:id="@+id/buy_root_kit"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="260dp"
+        android:layout_marginTop="120dp"
+        android:backgroundTint="@color/tron5"
+        android:onClick="buyRootKit"
+        android:text="@string/buy_root_kit"
+        android:textColor="@color/sunset3"
+        android:textSize="15sp" />
+
+
+    <ImageView
+        android:id="@+id/virus_tower"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="430dp"
+        android:layout_marginTop="70dp"
+        android:scaleType="fitStart"
+        app:srcCompat="@drawable/virus" />
+
+    <TextView
+        android:id="@+id/cost_virus"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="500dp"
+        android:layout_marginTop="70dp"
+        app:layout_constraintEnd_toStartOf="@+id/coin3"
+        android:text="0"
+        android:textColor="@color/sunset3"
+        android:textSize="34sp" />
+
+    <ImageView
+        android:id="@+id/coin3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="530dp"
+        android:layout_marginTop="75dp"
+        app:srcCompat="@drawable/panopticoin" />
+
+    <Button
+        android:id="@+id/buy_virus"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="460dp"
+        android:layout_marginTop="120dp"
+        android:backgroundTint="@color/tron5"
+        android:onClick="buyVirus"
+        android:text="@string/buy_virus"
+        android:textColor="@color/sunset3"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/cost_power_upgrade"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="200dp"
+        app:layout_constraintEnd_toStartOf="@+id/coin3"
+        android:text="0"
+        android:textColor="@color/sunset3"
+        android:textSize="34sp" />
+
+    <ImageView
+        android:id="@+id/coin4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="205dp"
+        app:srcCompat="@drawable/panopticoin" />
+
+    <Button
+        android:id="@+id/buy_power_upgrade"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="250dp"
+        android:backgroundTint="@color/tron5"
+        android:onClick="buyPowerUpgrade"
+        android:text="@string/buy_power_upgrade"
+        android:textColor="@color/sunset3"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/cost_range_upgrade"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="200dp"
+        app:layout_constraintEnd_toStartOf="@+id/coin3"
+        android:text="0"
+        android:textColor="@color/sunset3"
+        android:textSize="34sp" />
+
+    <ImageView
+        android:id="@+id/coin5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="330dp"
+        android:layout_marginTop="205dp"
+        app:srcCompat="@drawable/panopticoin" />
+
+    <Button
+        android:id="@+id/buy_range_upgrade"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="260dp"
+        android:layout_marginTop="250dp"
+        android:backgroundTint="@color/tron5"
+        android:onClick="buyRangeUpgrade"
+        android:text="@string/buy_range_upgrade"
+        android:textColor="@color/sunset3"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/tron5"
+        android:onClick="previousScreen"
+        android:text="@string/previous_map"
+        android:textColor="@color/sunset3"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/buy_root_kit" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

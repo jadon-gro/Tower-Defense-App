@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Default colors by Google -->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="gray">#FFB0ACB0</color>
+    <color name="white">#FFFFFFFF</color>
+    <!-- Sunset palette, for generic cyberpunk vibes -->
+    <color name="sunset1">#FFFF124F</color>
+    <color name="sunset2">#FFFF00A0</color>
+    <color name="sunset3">#FFFE75FE</color>
+    <color name="sunset4">#FF7A04EB</color>
+    <color name="sunset5">#FF120458</color>
+    <!-- Tron palette, for various digital-looking cyans -->
+    <color name="tron1">#FF66FBFB</color>
+    <color name="tron2">#FF0EF8F8</color>
+    <color name="tron3">#FF049494</color>
+    <color name="tron4">#FF072d91</color>
+    <color name="tron5">#FF062474</color>
+    <!-- Cyberspace palette, for when you need something darker -->
+    <color name="cyberspace1">#FFF887FF</color>
+    <color name="cyberspace2">#FFDE004E</color>
+    <color name="cyberspace3">#FF860029</color>
+    <color name="cyberspace4">#FF321450</color>
+    <color name="cyberspace5">#FF29132E</color>
+</resources>

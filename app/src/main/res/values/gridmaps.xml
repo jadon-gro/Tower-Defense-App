@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="map1">
+        <item>3,0</item>
+        <item>18</item>
+        <item>10</item>
+        <item>000000000000000000</item>
+        <item>000011100011100000</item>
+        <item>000010100010100000</item>
+        <item>111110111110111100</item>
+        <item>000000000000000100</item>
+        <item>000000000000000100</item>
+        <item>011110111110111100</item>
+        <item>000010100010100000</item>
+        <item>000011100011100000</item>
+        <item>000000000000000000</item>
+    </string-array>
+</resources>

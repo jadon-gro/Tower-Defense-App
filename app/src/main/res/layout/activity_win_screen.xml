@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".WinActivity">
+
+    <TextView
+        android:id="@+id/title_GameOver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="60dp"
+        android:fontFamily="@font/orbitron_black"
+        android:text="@string/win"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:textColor="@color/tron1"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/button_yes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/player_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:layout_marginBottom="60dp"
+        android:fontFamily="@font/orbitron_black"
+        android:text="@string/name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:textColor="@color/tron1"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/button_yes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/title_PlayAgain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="348dp"
+        android:fontFamily="@font/orbitron_black"
+        android:text="@string/ask_play_again"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:textColor="@color/sunset3"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.213"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_yes"
+        android:layout_width="90dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="244dp"
+        android:backgroundTint="@color/tron5"
+        android:onClick="startGame"
+        android:text="@string/yes"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.574"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_GameOver" />
+
+    <Button
+        android:id="@+id/button_no"
+        android:layout_width="80dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="244dp"
+        android:backgroundTint="@color/tron5"
+        android:onClick="quitGame"
+        android:text="@string/no"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.228"
+        app:layout_constraintStart_toEndOf="@+id/button_yes"
+        app:layout_constraintTop_toBottomOf="@+id/title_GameOver" />
+    <ImageView
+        android:id="@+id/money_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="168dp"
+        android:elevation="2dp"
+        app:layout_constraintHorizontal_bias="0.953"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/panopticoin" />
+    <TextView
+        android:id="@+id/money_earned"
+        android:layout_width="127dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="168dp"
+        android:fontFamily="@font/orbitron_black"
+        android:text="@string/money_earned"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:textColor="@color/tron1"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/kills"
+        android:layout_width="127dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="532dp"
+        android:layout_marginTop="168dp"
+        android:fontFamily="@font/orbitron_black"
+        android:text="@string/num_kills"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:textColor="@color/tron1"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lives_lost"
+        android:layout_width="127dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="248dp"
+        android:layout_marginTop="248dp"
+        android:fontFamily="@font/orbitron_black"
+        android:text="@string/lives_lost"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:textColor="@color/tron1"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/money_earned_title"
+        android:layout_width="326dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="124dp"
+        android:fontFamily="@font/orbitron_black"
+        android:text="@string/money_earned_title"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:textColor="@color/tron1"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lives_lost_title"
+        android:layout_width="323dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="204dp"
+        android:layout_marginTop="204dp"
+        android:fontFamily="@font/orbitron_black"
+        android:text="@string/lives_lost_title"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:textColor="@color/tron1"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/kills_title"
+        android:layout_width="191dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="492dp"
+        android:layout_marginTop="136dp"
+        android:fontFamily="@font/orbitron_black"
+        android:text="@string/kills_title"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:textColor="@color/tron1"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

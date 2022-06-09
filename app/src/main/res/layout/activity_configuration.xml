@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".ConfigurationActivity">
+
+    <Button
+        android:id="@+id/button_medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:backgroundTint="@color/tron5"
+        android:onClick="chooseMedium"
+        android:text="@string/medium_level"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/button_confirm"
+        app:layout_constraintEnd_toStartOf="@+id/button_hard"
+        app:layout_constraintStart_toEndOf="@+id/button_easy"
+        app:layout_constraintTop_toBottomOf="@+id/text_ask_difficulty" />
+
+    <Button
+        android:id="@+id/button_confirm"
+        android:layout_width="133dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/tron5"
+        android:onClick="confirmInfo"
+        android:text="@string/confirm_config"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_medium" />
+
+    <Button
+        android:id="@+id/button_hard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="1dp"
+        android:backgroundTint="@color/tron5"
+        android:onClick="chooseHard"
+        android:text="@string/hard_level"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_medium"
+        app:layout_constraintTop_toBottomOf="@+id/text_ask_difficulty" />
+
+    <Button
+        android:id="@+id/button_name"
+        android:layout_width="194dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="26dp"
+        android:backgroundTint="@color/tron5"
+        android:onClick="submitName"
+        android:text="@string/submit_name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/text_ask_difficulty"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PlayerName" />
+
+    <Button
+        android:id="@+id/button_easy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/tron5"
+        android:onClick="chooseEasy"
+        android:text="@string/easy_level"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/button_medium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_ask_difficulty" />
+
+    <EditText
+        android:id="@+id/PlayerName"
+        android:layout_width="224dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="@string/edit_name"
+        android:inputType="textPersonName"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/tron4"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/button_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_ask_name" />
+
+    <TextView
+        android:id="@+id/text_ask_name"
+        android:layout_width="285dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="17dp"
+        android:text="@string/ask_name"
+        android:textAlignment="center"
+        android:textColor="@color/tron1"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/PlayerName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/ask_name" />
+
+    <TextView
+        android:id="@+id/text_ask_difficulty"
+        android:layout_width="337dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/ask_difficulty"
+        android:textAlignment="center"
+        android:textColor="@color/tron1"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/button_medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_name" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
